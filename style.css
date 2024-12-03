@@ -209,7 +209,7 @@ input:checked + .slider:before {
 }
 
 /* Add number indicators to cells */
-.small-cell::before {
+.big-cell.active-board .small-cell::before {
     content: attr(data-number);
     position: absolute;
     top: 5px;
