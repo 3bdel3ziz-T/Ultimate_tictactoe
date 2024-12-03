@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Ultimate Tic Tac Toe</h1>
+            <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="checkbox">
+                    <input type="checkbox" id="checkbox" />
+                    <div class="slider round"></div>
+                </label>
+                <span>Dark Mode</span>
+            </div>
+        </div>
+        <div id="game-status">Current Player: X</div>
+        <div id="game-board"></div>
+        <div class="controls">
+            <button id="reset">Reset Game</button>
+            <button id="rules">Show Rules</button>
+        </div>
+    </div>
+    <script type="module" src="script.js" defer></script>
+</body>
+</html>
