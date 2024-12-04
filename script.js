@@ -92,6 +92,12 @@ export class UltimateTicTacToe {
             if (this.gameOver) return;
             if (e.key >= '1' && e.key <= '9' && this.activeBoard !== null) {
                 this.makeMove(this.activeBoard,parseInt(e.key) - 1);
+            }else if (e.key >= '1' && e.key <= '9' && this.activeBoard === null) {
+                const selectedCell = document.querySelectorAll('.big-cell')[parseInt(e.key) - 1]
+                if(selectedCell.classList.contains('won-x') === false && selectedCell.classList.contains('won-o') === false) {
+                    this.activeBoard = parseInt(e.key) - 1
+                    this.updateBoard()
+                }
             }
         });
     }
